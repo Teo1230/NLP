@@ -65,7 +65,7 @@ def vectorize_text_data(txt, max_features=1000):
     return X_combined, y, vectorizer
 
 
-def train_classifier(X, y):
+def train_classifier(X, y,model):
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=15)
 
     if model == 'LinearSVC':
